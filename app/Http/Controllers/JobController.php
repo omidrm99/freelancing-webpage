@@ -9,7 +9,7 @@ class JobController extends Controller
 {
     public function index()
     {
-        return view('job.index' , ['jobs' => Job::all()]);
+        return view('job.index', ['jobs' => Job::all()]);
     }
 
     public function create()
@@ -24,7 +24,7 @@ class JobController extends Controller
 
     public function show(Job $job)
     {
-        return view('job.show' , ['job' => $job]);
+        return view('job.show', ['job' => $job]);
     }
 
     public function edit(string $id)
