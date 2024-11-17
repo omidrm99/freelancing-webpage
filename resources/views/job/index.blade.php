@@ -17,7 +17,13 @@
                 </div>
             </div>
 
-            <p class="text-sm text-slate-500">{!! nl2br(e($job->description)) !!}</p>
+            <p class="text-sm text-slate-500 mb-4">{!! nl2br(e($job->description)) !!}</p>
+
+            <div>
+                <x-link-button :href="route('jobs.show', $job)">
+                    Show
+                </x-link-button>
+            </div>
         </x-card>
     @endforeach
 </x-layout>
